@@ -1,0 +1,37 @@
+what it does is that first it captrues the video and then finds the region of interest 
+and in the region og interest it converts all the bgr colors into hsv colors
+
+define the range of skin color in hsv the upper and the lower range
+then extract the skin colour into possibly two colors 
+white - skin
+black - rest
+ 
+for removing noise we wil blur the 
+
+we will use contours 
+contours  are basically outlines being shown in the region of interest
+
+we remove noise by increasing the max contour area
+
+\\\\\
+basis of project
+
+convex hull is defined 
+and we calculate the area of convex hull 
+
+and we also calculate the area of my hand
+
+then calc the area ratio 
+
+area_ratio = ((areahull - areahand)/areahand)*100
+
+
+the basis suggests that this area ratio would be different for each of the gestures
+
+
+then we define defects 
+defects are the regions not covered by the hand in the convex hull
+
+ 
+ 
+ 
